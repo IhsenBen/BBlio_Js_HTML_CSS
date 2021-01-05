@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css" />
     <title>Bbiblio</title>
   </head>
+
   <body>
     <!-- /**** Navigateur ****/ -->
     <nav>
@@ -20,8 +21,8 @@
         <li>
           <a class="header-connexion"
             ><img class="icon__nav-connexion" src="image\user.svg" />
-            <p>Inscription/Connexion</p></a
-          >
+            <p>Inscription/Connexion</p>
+          </a>
         </li>
         <li>
           <a href="#"><img src="./image/search.png" alt="" /></a>
@@ -29,13 +30,16 @@
       </ul>
     </nav>
 
+
+
+    <!-- BODY  -->
     <div class="grid-container">
       <div class="index-top">
         <div class="slogan_book">
           <div class="slogan">
             <h1 id="slogan">Slogan Phrase</h1>
-            <a id="slogan_text"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <a id="slogan_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore</a
             >
           </div>
@@ -55,7 +59,9 @@
           </div>
         </div>
         <div class="side_pic_txt">
-          <div class="side_img"><img src="image\Rectangle.png" /></div>
+          <div class="side_img">
+            <img src="image\Rectangle.png" id="bib_affiche" />
+          </div>
           <div class="side_txt">
             <h3 id="h3_side">Sed ut perspiciatis unde omnis</h3>
             <a id="a_side"
@@ -68,7 +74,73 @@
         </div>
       </div>
 
-      <div class="index-bottom"></div>
+      <div class="index-bottom">
+        <div class="news_feed">
+          <div id="article_1">
+            <h2 class="news_article">Sed ut perspiciatis</h2>
+            <p class="article">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem
+            </p>
+            <img style="font-family: impact" src="image\En savoir.svg" />
+          </div>
+
+          <div id="article_2">
+            <h2 class="news_article">Sed ut perspiciatis</h2>
+            <p class="article">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem
+            </p>
+            <img style="font-family: impact" src="image\En savoir.svg" />
+          </div>
+
+          <div id="article_3">
+            <h2 class="news_article">Sed ut perspiciatis</h2>
+            <p class="article">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem
+            </p>
+            <img style="font-family: impact" src="image\En savoir.svg" />
+          </div>
+
+          <div id="article_4">
+            <h2 class="news_article">Sed ut perspiciatis</h2>
+            <p class="article">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem
+            </p>
+            <img style="font-family: impact" src="image\En savoir.svg" />
+          </div>
+        </div>
+
+        <div class="twitter_feed">
+          <div class="twitter_titre">
+            <div><img class="twitter_bird" src="image\Twitter_bird.png" /></div>
+            <div>
+              <h2 class="tweet-title_1">Fil Twitter</h2>
+            </div>
+          </div>
+
+          <div>
+            <a
+              class="twitter-timeline"
+              data-width="500"
+              data-height="700"
+              href="https://twitter.com/PulitzerPrizes?ref_src=twsrc%5Etfw"
+              >Tweets by PulitzerPrizes</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- /**** Footer ****/ -->
