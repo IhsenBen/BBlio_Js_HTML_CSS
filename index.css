@@ -101,21 +101,9 @@ nav header img{
   }
 
 
-  .twitter_bird{
-      padding-top: 10px;
-      margin-right: 10px;
-  }    
-    
-.twitter_titre{
-    display: flex;
-    flex-wrap: nowrap;
-
-}
+ 
   
 .tweet-title_1{
-      
-
-
 font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
@@ -125,32 +113,41 @@ letter-spacing: -0.015em;
 }
 
 /* body */
-.grid-container {
-    padding-left: 75px;
-    padding-right: 50px;
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "index-top"
-      "index-bottom";
-    }
 
 
 
   .index-top {
+    margin-top:50px;
+    margin-right: 80px;
+    margin-left: 80px;
     grid-area: index-top;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 150px;
- }
+    display: grid;
+      grid-template-columns:
+      repeat(
+        auto-fit,
+        minmax(
+          min(100%, 400px), /* min value */
+          1fr /* max value */
+        )
+      );
+    gap: 20px;
+      
+
+    
+  }
 
   .index-bottom { 
-      padding-top: 150px;
-grid-area: index-bottom; 
-display: flex;
+ padding-top: 150px;
+ display: grid;
+      grid-template-columns:
+      repeat(
+        auto-fit,
+        minmax(
+          min(100%, 500px), /* min value */
+          1fr /* max value */
+        )
+      );
+    gap: 20px;
 }
 
   #random_book{
@@ -159,18 +156,24 @@ display: flex;
   }
 
 .slogan_book{
-    width: 600px;
-    margin: 40px;
-    padding-top: 17px;
-    float: left;
-
+  display: grid;
+  grid-template-columns:
+  repeat(
+    auto-fit,
+    minmax(
+      min(100%, 500px), /* min value */
+      1fr /* max value */
+    )
+  );
+gap: 20px;
    
 }
 
 
   .slogan{
      font-family: "garamondbold";
-      padding-bottom: 20px;
+     padding-bottom: 20px;
+ 
       
     }
 
@@ -189,18 +192,24 @@ color: rgba(0, 0, 0, 0.8);
     }
 
   .books{
-
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: 300px;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns:
+      repeat(
+        auto-fit,
+        minmax(
+          min(100%, 200px), /* min value */
+          1fr /* max value */
+        )
+      );
+    gap: 20px;
   }
 
 
   .side_pic_txt{
-    width: 600px;
+    width: 400px;
     padding-top: 17px;
-    padding-left: 60px;
+
 }
   #h3_side{
     font-family: Montserrat;
@@ -232,7 +241,7 @@ color: rgba(0, 0, 0, 0.8);
   .news_feed{
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 10px;
 
   }
@@ -256,9 +265,8 @@ color: #000000;
 
   .article{
     
-    height: 117px;
-    left: 23px;
-    top: 290px;
+   
+
     
     /* Body P */
     
@@ -275,6 +283,7 @@ color: #000000;
 }
 
 .twitter_feed{
+  width: 400px;
 align-items: center;
 justify-items: center;
 display:flex ;
@@ -282,11 +291,22 @@ flex-wrap: wrap;
 height: 987.03px;
 left: calc(50% - 338.76px/2 + 479.38px);
 top: calc(50% - 987.03px/2 + 520.09px);
-padding-left: 300px;
 
 }
-  
+  .filtt{
+    margin-top: -200px;
+  }
 
+.twitter_bird{
+  padding-top: 10px;
+  margin-right: 10px;
+}    
+
+.twitter_titre{
+display: flex;
+flex-wrap: nowrap;
+
+}
 /* Footer */
 
 footer{
