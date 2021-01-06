@@ -1,208 +1,210 @@
-
-
-
-@font-face 
-{
+@font-face {
   font-family: "garamond";
-  src: url("/font/AGaramondPro-Regular.otf"), url("../font/AGaramondPro-Regular.otf");
+  src: url("/font/AGaramondPro-Regular.otf"),
+    url("../font/AGaramondPro-Regular.otf");
 }
 
-@font-face 
-{
-    
+@font-face {
   font-family: "garamondbold";
   src: url("/font/AGaramondPro-Bold.otf"), url("../font/AGaramondPro-Bold.otf");
 }
 
-   *{
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       scrollbar-color: transparent transparent; /* thumb and track color */
-       scrollbar-width: 0px;
-      
-   }
-
-
-   *::-webkit-scrollbar {
-    width: 0;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-  }
-  
-  * {
-    -ms-overflow-style: none;
-  }
-
-  html{
-    background-color: #F7F4EC;
-  }
-
-  /**** Navigateur ****/
-
-nav{
-    background-color: #18273d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-nav ul li a{
-    font-family: "garamond";
-    color:white;
-    transition: 0.3s;
-    text-decoration:none;
-    font-size: 22px;
-}
-
-nav ul li a:hover{
-    color:#bbb6b6;
-}
-
-ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding-right: 50px;
-}
-
-nav ul{
-    display: inline-block;
-}
-
-nav ul li img{
-    width: 50%;
-}
-
-nav header img{
-    width: 70%;
-}
-
-
-.header-connexion{
-    text-align: center;
-    text-decoration: none;
-    align-self: center;
-    display: flex;
-    padding: .8rem 0;
-    margin-right: 5px;
-    color: white;
-  }
-  .icon__nav-connexion{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 5px;
-    height: 20px;
-    width: 20px;
-  }
-
-
-  .twitter_bird{
-      padding-top: 10px;
-      margin-right: 10px;
-  }    
-    
-.twitter_titre{
-    display: flex;
-    flex-wrap: nowrap;
-
-}
-  
-.tweet-title_1{
-      
-
-
+* {
 font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 50px;
-letter-spacing: -0.015em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+html {
+  background-color: #f7f4ec;
+}
+
+/**** Navigateur ****/
+
+
+nav {
+  background-color: #18273d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav,.menu, .ul_menu, a {
+  font-family: "garamond";
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+nav,.menu,.ul_menu, a:hover {
+  color: #bbb6b6;
+}
+
+.menu,.ul_menu {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.menu,.ul_menu{
+  display: inline-block;
+}
+
+nav .menu .ul_menu img {
+  width: 50%;
+}
+
+nav header img {
+  width: 70%;
+}
+
+.header-connexion {
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  display: flex;
+  padding: 0.8rem 0;
+  margin-right: 5px;
+  color: white;
+}
+.icon__nav-connexion {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.twitter_bird {
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.twitter_titre {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.tweet-title_1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -0.015em;
 }
 
 /* body */
 .titre_lt{
-    font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 72px;
-/* or 150% */
+ 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    /* or 150% */
+    
+    letter-spacing: -0.015e
+}
+.container{
 
-letter-spacing: -0.015em;
-
-color: #000000;
-
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: 25px;
+margin-right: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
-ul {
-    list-style:none;
-    padding-left: 1em;
-  }
-  li {
-    &:before {
-      content: '';
-      display: inline-block;
-      height: 1em;
-      width: 1em;
-      background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
-      background-image: url('\image\laureat.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin-right:0.5em;   
-    }
-  }
+.ul_years{
+    font-size:20px;
+    display: block;
+    list-style-type: none;
+    font-weight: bold;
+}
+.price
+.pric_box{
+    height: 150px;
+    width: 100%;
+    border:#bfa959 solid 15px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */
 
-footer{
-  display:flex;
+footer {
+  display: flex;
   justify-content: space-around;
   background-color: #18273d;
-  padding:40px 0;
+  padding: 40px 0;
   font-family: "garamond";
   flex-wrap: wrap;
 }
 
-footer h5{
-    color: #F7F4EC;
-    transition: 0.3s;
-    text-decoration: none;
-    font-size: 22px;
-    padding:30px 0;
+footer h5 {
+  color: #f7f4ec;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 30px 0;
 }
 
-.partenaires a, .coordonner a {
+.partenaires a,
+.coordonner a {
   display: block;
-  color: #F7F4EC;
+  color: #f7f4ec;
   text-decoration: none;
   font-size: 20px;
-  transition:0.3s;
+  transition: 0.3s;
 }
 
 .coordonner a {
-text-align: center;
-padding:5px 0;
+  text-align: center;
+  padding: 5px 0;
 }
 
-.partenaires a:hover, .coordonner a:hover  {
-  color:#bbb6b6;
+.partenaires a:hover,
+.coordonner a:hover {
+  color: #bbb6b6;
 }
 
-.coordonner{
-  padding:30px 0;
+.coordonner {
+  padding: 30px 0;
 }
 
 .btn {
-  background-color: #BFA959;
+  background-color: #bfa959;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -210,109 +212,106 @@ padding:5px 0;
   font-size: 16px;
   margin: 4px 2px;
   transition: 0.3s;
-  cursor:pointer;
-  border-radius:5px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .btn:hover {
   opacity: 0.8;
 }
 
-.reseau{
+.reseau {
   display: flex;
   justify-content: space-between;
 }
 
-
-
-
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
-    section {
-        width: 100%;
-    }
+  section {
+    width: 100%;
+  }
 
-    article{
-      display: flex;
-      flex-direction: column;
-    }
+  article {
+    display: flex;
+    flex-direction: column;
+  }
 
-    article .une{
-      margin-left:40px;
-      padding-top:40px;
-    }
+  article .une {
+    margin-left: 40px;
+    padding-top: 40px;
+  }
 
-    article .une img{
-      width: 80%;
-    }
+  article .une img {
+    width: 80%;
+  }
 
-    article .artaside{
-      margin-left:20px;
-      padding-top:40px;
-      border:none;
-    }
+  article .artaside {
+    margin-left: 20px;
+    padding-top: 40px;
+    border: none;
+  }
 
-    article .art1 img, .art2 img, .art3 img{
-      width: 50%;
-    }
+  article .art1 img,
+  .art2 img,
+  .art3 img {
+    width: 50%;
+  }
 
-    article .art1, .art2, .art3{
-      border:none;
-    }
+  article .art1,
+  .art2,
+  .art3 {
+    border: none;
+  }
 
-    article .art1{
-      margin-top:40px;
-    }
+  article .art1 {
+    margin-top: 40px;
+  }
 
-    aside .line{
-      display: none;
-    }
-
-    article .titre .line{
-      display: none;
-    }
-
-    #titre .line{
-      display: none;
-    }
-
-   
-}
-
-@media screen and (max-width: 680px) {
-  nav ul li img{
+  aside .line {
     display: none;
   }
 
-
-    nav ul li a{
-      font-size: 15px;
-    }
-
-    nav{
-      flex-wrap: nowrap;
-    }
-
-  footer{
-    flex-direction: column;
-   justify-content: center;
-   text-align: center;
+  article .titre .line {
+    display: none;
   }
-#bib_affiche{
-    width:500px;
-    height: 600px;
+
+  #titre .line {
+    display: none;
+  }
 }
-  .center{
+
+@media screen and (max-width: 680px) {
+  nav ul li img {
+    display: none;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #bib_affiche {
+    width: 500px;
+    height: 600px;
+  }
+  .center {
     order: -3;
   }
 
-  .reseau{
+  .reseau {
     justify-content: center;
   }
 
-  .reseau img{
-    padding : 0 20px;
+  .reseau img {
+    padding: 0 20px;
   }
 }
-
