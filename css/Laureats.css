@@ -128,26 +128,46 @@ nav header img {
 }
 .container{
 
-margin-top: 50px;
-margin-bottom: 50px;
-margin-left: 25px;
-margin-right: 25px;
-    width: 100%;
+
+margin-left: auto;
+margin-right: auto;
+    width: 50%;
     height: 100%;
     display: flex;
+    flex-wrap:  no-wrap;
 }
 
 .ul_years{
     font-size:20px;
-    display: block;
     list-style-type: none;
+    margin-left:0px;
+    padding-left:0px;
+    display: inline-block;
     font-weight: bold;
 }
-.price
+.ul_years img{
+    float:left;
+}
+.ul_years p{
+text-align: right; 
+display:inline-block;
+padding: 0;
+}
+.price_Yedition{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .pric_box{
-    height: 150px;
+    height: 300px;
     width: 100%;
-    border:#bfa959 solid 15px;
+    margin: 20px;
+    border:#bfa959 solid 5px;
+    text-align: center;
+    vertical-align: middle;
+    flex: 0 0 500px;
+    line-height: 40px;  
 }
 
 
