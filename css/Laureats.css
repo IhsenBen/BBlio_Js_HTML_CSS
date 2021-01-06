@@ -1,3 +1,6 @@
+
+
+
 @font-face 
 {
   font-family: "garamond";
@@ -125,55 +128,39 @@ letter-spacing: -0.015em;
 }
 
 /* body */
-.titre_cd{
-  margin-top: 100px;
-
-left: 35.27%;
-right: 35.39%;
-top: 25.33%;
-bottom: 0%;
-
-font-family: Montserrat;
+.titre_lt{
+    font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
 font-size: 48px;
 line-height: 72px;
+/* or 150% */
 
 letter-spacing: -0.015em;
 
 color: #000000;
-}
-.container{
-  margin-bottom: 50px;
-  margin-top: 200px;
-}
-
-.categorie_1, .categorie_2, .categorie_3, .categorie_4{
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  align-items: center;
-  justify-content: center;
-  display:flex;
-  gap: 50px;
-}
-
-.categorie{
-  font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 72px;
-/* identical to box height, or 150% */
-
-letter-spacing: -0.015em;
-
-color: #000000
-}
-.categorie_icon{
-  height: 35px;
 
 }
+
+ul {
+    list-style:none;
+    padding-left: 1em;
+  }
+  li {
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 1em;
+      width: 1em;
+      background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
+      background-image: url('\image\laureat.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right:0.5em;   
+    }
+  }
+
+
 /* Footer */
 
 footer{
@@ -329,8 +316,3 @@ padding:5px 0;
   }
 }
 
-.slide_box{
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
