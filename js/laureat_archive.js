@@ -1,9 +1,9 @@
 function archive1() {
 
-    document.getElementById("h3_cat1").innerHTML = "gagnant -2020-";
-    document.getElementById("h3_cat2").innerHTML = "gagnant -2020-";
-    document.getElementById("h3_cat3").innerHTML = "gagnant -2020-";
-    document.getElementById("h3_cat4").innerHTML = "gagnant -2020-";
+    document.getElementById("h3_cat1").innerHTML = "Gagnant -2020-";
+    document.getElementById("h3_cat2").innerHTML = "Gagnant -2020-";
+    document.getElementById("h3_cat3").innerHTML = "Gagnant -2020-";
+    document.getElementById("h3_cat4").innerHTML = "Gagnant -2020-";
 
 
     document.getElementById("img_cat1").src = '/image/faust.png';
@@ -13,11 +13,11 @@ function archive1() {
 }
 
 function archive2() {
-    document.getElementById("h3_cat1").innerHTML = "gagnant -2019-";
-    document.getElementById("h3_cat2").innerHTML = "gagnant -2019-";
-    document.getElementById("h3_cat3").innerHTML = "gagnant -2019-";
-    document.getElementById("h3_cat4").innerHTML = "gagnant -2019-";
-    document.getElementById("h3_cat5").innerHTML = "gagnant -2019-";
+    document.getElementById("h3_cat1").innerHTML = "Gagnant -2019-";
+    document.getElementById("h3_cat2").innerHTML = "Gagnant -2019-";
+    document.getElementById("h3_cat3").innerHTML = "Gagnant -2019-";
+    document.getElementById("h3_cat4").innerHTML = "Gagnant -2019-";
+    document.getElementById("h3_cat5").innerHTML = "Gagnant -2019-";
 
 
     document.getElementById("img_cat1").src = '/image/.jpg';
@@ -29,11 +29,11 @@ function archive2() {
 }
 
 function archive3() {
-    document.getElementById("h3_cat1").innerHTML = "gagnant -2018-";
-    document.getElementById("h3_cat2").innerHTML = "gagnant -2018-";
-    document.getElementById("h3_cat3").innerHTML = "gagnant -2018-";
-    document.getElementById("h3_cat4").innerHTML = "gagnant -2018-";
-    document.getElementById("h3_cat5").innerHTML = "gagnant -2018-";
+    document.getElementById("h3_cat1").innerHTML = "Gagnant -2018-";
+    document.getElementById("h3_cat2").innerHTML = "Gagnant -2018-";
+    document.getElementById("h3_cat3").innerHTML = "Gagnant -2018-";
+    document.getElementById("h3_cat4").innerHTML = "Gagnant -2018-";
+    document.getElementById("h3_cat5").innerHTML = "Gagnant -2018-";
 
 
     document.getElementById("img_cat1").src = '/image/craft.jpg';
@@ -45,10 +45,28 @@ function archive3() {
 
 
 function archive4() {
-    document.getElementById("h3_cat1").innerHTML = "gagnant -2017-";
-    document.getElementById("h3_cat2").innerHTML = "gagnant -2017-";
-    document.getElementById("h3_cat3").innerHTML = "gagnant -2017-";
-    document.getElementById("h3_cat4").innerHTML = "gagnant -2017-";
+    document.getElementById("h3_cat1").innerHTML = "Gagnant -2017-";
+    document.getElementById("h3_cat2").innerHTML = "Gagnant -2017-";
+    document.getElementById("h3_cat3").innerHTML = "Gagnant -2017-";
+    document.getElementById("h3_cat4").innerHTML = "Gagnant -2017-";
+
+
+
+
+    document.getElementById("img_cat1").src = '/image/craft.jpg';
+    document.getElementById("img_cat2").src = '/image/buk.jpg';
+    document.getElementById("img_cat3").src = '/image/celine.jpg';
+    document.getElementById("img_cat4").src = '/image/stendhal.jpg';
+}
+
+
+
+
+function archive5() {
+    document.getElementById("h3_cat1").innerHTML = "Gagnant -2016-";
+    document.getElementById("h3_cat2").innerHTML = "Gagnant -2016-";
+    document.getElementById("h3_cat3").innerHTML = "Gagnant -2016-";
+    document.getElementById("h3_cat4").innerHTML = "Gagnant -2016-";
 
 
 
