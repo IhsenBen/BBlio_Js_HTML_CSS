@@ -1,0 +1,511 @@
+
+@font-face {
+    font-family: "garamond";
+    src: url("/font/AGaramondPro-Regular.otf"),
+      url("../font/AGaramondPro-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "garamondbold";
+    src: url("/font/AGaramondPro-Bold.otf"), url("../font/AGaramondPro-Bold.otf");
+  }
+  
+  * {
+  font-family: Montserrat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  
+  html {
+    background-color: #f7f4ec;
+  }
+  
+  /**** Navigateur ****/
+  
+  
+  nav {
+    background-color: #18273d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav,.menu, .ul_menu, a {
+    font-family: "garamond";
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  nav,.menu,.ul_menu, a:hover {
+    color: #bbb6b6;
+  }
+  
+  .menu,.ul_menu {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+  }
+  
+  .menu,.ul_menu{
+    display: inline-block;
+  }
+  
+  nav .menu .ul_menu  {
+    width: 50%;
+  }
+  
+  nav header  {
+    width: 70%;
+  }
+  
+  .header-connexion {
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+    display: flex;
+    padding: 0.8rem 0;
+    margin-right: 5px;
+    color: white;
+  }
+  .icon__nav-connexion {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .twitter_bird {
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .twitter_titre {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .tweet-title_1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+  }
+  
+  /* body */
+  
+h2, h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    line-height: 50px;
+}
+ h2{
+     font-size: 40px;
+ }
+h3{
+   
+    font-size: 20px;
+    
+}
+
+#book_left{
+    color: #bfa959;
+    font-weight: bold;
+
+}
+
+
+
+
+
+  
+  /*  SECTIONS  */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "sider_bar main_section";
+  }
+
+  .sider_bar { grid-area: sider_bar; 
+    margin: 100px 10px 100px 50px;
+border: 1px black solid;
+display: flex;
+flex-direction: column;
+gap: 100px 100px;
+}
+  .main_section { grid-area: main_section; }
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    /* body */
+    
+  .container{
+  
+    border: #18273d solid 2px;
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+
+
+.top_box{
+  display: flex;
+
+}
+
+
+  .bottom_box{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .affiche_book{
+      height:400px;
+      width: 200px;
+  }
+#book_1{
+    display: block;
+}
+
+#book_2{
+    display: block;
+
+}
+#book_3{
+    display: block;
+
+}
+#book_4{
+    display: block;
+
+}
+
+
+  .rating{
+      margin-top: 50px;
+      margin-bottom: 28px;
+  }
+  
+  
+
+
+
+
+
+
+
+  /* notation etoiles */
+
+
+  
+
+  .star-rating__stars {
+    position: relative;
+    height: 5rem;
+    width: 25rem;
+    background: url(/image/off.svg);
+    background-size: 5rem 5rem;
+  }
+  
+  .star-rating__label {
+    position: absolute;
+    height: 100%;
+    background-size: 5rem 5rem;
+  }
+  
+  .star-rating__input {
+    margin: 0;
+    position: absolute;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  .star-rating__stars .star-rating__label:nth-of-type(1) {
+    z-index: 5;
+    width: 20%;
+  }
+  
+  .star-rating__stars .star-rating__label:nth-of-type(2) {
+    z-index: 4;
+    width: 40%;
+  }
+  
+  .star-rating__stars .star-rating__label:nth-of-type(3) {
+    z-index: 3;
+    width: 60%;
+  }
+  
+  .star-rating__stars .star-rating__label:nth-of-type(4) {
+    z-index: 2;
+    width: 80%;
+  }
+  
+  .star-rating__stars .star-rating__label:nth-of-type(5) {
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .star-rating__input:checked + .star-rating__label,
+  .star-rating__input:focus + .star-rating__label,
+  .star-rating__label:hover {
+    background-image: url(/image/on.svg);
+  }
+  
+  .star-rating__label:hover ~ .star-rating__label {
+    background-image: url(/image/off.svg);
+  }
+  
+  .star-rating__input:focus ~ .star-rating__focus {
+    position: absolute;
+    top: -.25em;
+    right: -.25em;
+    bottom: -.25em;
+    left: -.25em;
+    outline: 0.25rem solid lightblue;
+  }
+  
+  
+/* fin notation Etoiles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+    /*end of Body*/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Footer */
+    
+    footer {
+      display: flex;
+      justify-content: space-around;
+      background-color: #18273d;
+      padding: 40px 0;
+      font-family: "garamond";
+      flex-wrap: wrap;
+    }
+    
+    footer h5 {
+      color: #f7f4ec;
+      transition: 0.3s;
+      text-decoration: none;
+      font-size: 22px;
+      padding: 30px 0;
+    }
+    
+    .partenaires a,
+    .coordonner a {
+      display: block;
+      color: #f7f4ec;
+      text-decoration: none;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    
+    .coordonner a {
+      text-align: center;
+      padding: 5px 0;
+    }
+    
+    .partenaires a:hover,
+    .coordonner a:hover {
+      color: #bbb6b6;
+    }
+    
+    .coordonner {
+      padding: 30px 0;
+    }
+    
+    .btn {
+      background-color: #bfa959;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition: 0.3s;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .btn:hover {
+      opacity: 0.8;
+    }
+    
+    .reseau {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    /* Responsive */
+    
+    @media screen and (max-width: 1200px) {
+      section {
+        width: 100%;
+      }
+    
+      article {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      article .une {
+        margin-left: 40px;
+        padding-top: 40px;
+      }
+    
+      article .une  {
+        width: 80%;
+      }
+    
+      article .artaside {
+        margin-left: 20px;
+        padding-top: 40px;
+        border: none;
+      }
+    
+      article .art1 ,
+      .art2 ,
+      .art3  {
+        width: 50%;
+      }
+    
+      article .art1,
+      .art2,
+      .art3 {
+        border: none;
+      }
+    
+      article .art1 {
+        margin-top: 40px;
+      }
+    
+      aside .line {
+        display: none;
+      }
+    
+      article .titre .line {
+        display: none;
+      }
+    
+      #titre .line {
+        display: none;
+      }
+    }
+    
+    @media screen and (max-width: 680px) {
+      nav ul li  {
+        display: none;
+      }
+    
+      nav ul li a {
+        font-size: 15px;
+      }
+    
+      nav {
+        flex-wrap: nowrap;
+      }
+    
+      footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      #bib_affiche {
+        width: 500px;
+        height: 600px;
+      }
+      .center {
+        order: -3;
+      }
+    
+      .reseau {
+        justify-content: center;
+      }
+    
+      .reseau  {
+        padding: 0 20px;
+      }
+    }
+    
